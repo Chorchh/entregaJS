@@ -44,11 +44,14 @@ pizza.forEach((numero) => {
   });
 
 // b)
-pizza.forEach(pizza => {
-    if(pizza.precio < 600)
-    console.log(`La pizza más barata es la ${pizza.nombre} `);
-});
-
+let pizzaMenosDe = () => {
+    if (pizza.some((pizza) => pizza.precio < 600)){
+        return `la pizza ${pizza.nombre} es menor a $600`;
+    }
+    else {
+        return "no hay pizzas menores a $600"
+    }
+}
 // c)
 console.log(pizza.map((pizza) => pizza.nombre));
 
