@@ -30,7 +30,7 @@ let pizza = [
         precio: 900,
     },
     {
-        id: 5,
+        id: 6,
         nombre: "argentina",
         ingredientes: ["tomate", "cebolla", "queso"],
         precio: 600,
@@ -38,8 +38,8 @@ let pizza = [
 ]
 
 // a)
-pizza.forEach(numero => {
-    if(numero.id % 2 != 0)
+pizza.forEach((numero) => {
+    if(numero.id % 2 !== 0)
        console.log(`Las pizzas impares son: ${numero.nombre}`);
   });
 
