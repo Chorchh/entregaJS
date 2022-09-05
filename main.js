@@ -51,7 +51,9 @@ let pizzaMenosDe = () => {
     else {
         return "no hay pizzas menores a $600"
     }
-}
+};
+console.log(pizzaMenosDe());
+
 // c)
 console.log(pizza.map((pizza) => pizza.nombre));
 
@@ -63,3 +65,62 @@ const precioPizzas = pizza.map(({precio}) => precio);
 const pizzaconprecio = () => pizza.forEach ((pizza) => console.log(`La pizza de ${pizza.nombre} sale $${pizza.precio}`));
 
 pizzaconprecio();
+
+
+// Practica de otras clases
+
+const inputFocus = document.querySelector("#inputbtn");
+
+inputFocus.addEventListener("focus", funcionFocus);
+inputFocus.addEventListener("blur", funcionBlur);
+
+function funcionFocus () {
+    inputFocus.style.backgroundColor = "white";
+}
+
+function funcionBlur () {
+    inputFocus.style.backgroundColor = "#da7c62";
+}
+
+
+// Entrega 2 JS
+
+// Traer elementos del HTML
+const input = document.querySelector(".inputbtn");
+const formPizzas = document.querySelector(".pizza-form");
+const pizzaName = document.getElementById("pizza-name");
+const pizzaPrice = document.getElementById("pizza-price");
+
+const isEmpty = (value) => (value === "" ? false : true);
+
+const addInput = e => {
+    e.preventDefault();
+    const inputNumber = input.value;
+    if (!isEmpty(inputNumber)) {
+        alert("Se requiere un valor");
+        return;
+    } else if (pizzaSearch(pizza) !== undefined) {
+        pizzaName.textContent = `La pizza ${(pizzaSearch(pizza).nombre)}`;
+        pizzaPrice.textContent = `Te cuesta $${pizzaSearch(pizza).precio}`
+    } else if (pizzaSearch(pizza) == undefined) {
+        pizzaName.textContent = `No tenemos esa pizza`;
+        pizzaPrice.textContent = "";
+        return;
+    }
+};
+
+
+const pizzaSearch = (p) => {
+    const valor = input.value;
+    const search = p.find((pizza) => pizza.id == valor);
+    return search;
+};
+
+
+// Funcion para ejecutar
+const init = () => {
+    formPizzas.addEventListener("submit", addInput);
+    formPizzas.reset();
+};
+
+init();
