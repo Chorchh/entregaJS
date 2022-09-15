@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #142540;
+}
+
+.hs {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    color: #ff4514;
+    margin-top: 30px;
+    font-size: 40px;
+    padding: 40px;
+}
+
+.pizza-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    gap: 40px;
+}
+
+input {
+    margin-top: 40px;
+}
+
+button {
+    background-color: #f93a13;
+    color: #142540;
+    height: 40px;
+    width: 100px;
+    border-radius: 50px;
+    font-size: 18px;
+}
+
+.pizza_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    color: #f93913;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.img-pizza {
+  width: 200px;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-size: 24px;
+    padding: 1rem;
+}
+
+p {
+    font-size: 18px;
+}
+
+small {
+    color: #f93a13;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 18px;
+}

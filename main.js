@@ -2,38 +2,44 @@ let pizza = [
     {
         id: 1,
         nombre: "muzzarella",
-        ingredientes: ["muzzarella", "salsa de tomate", "aceitunas"],
+        ingredientes: ["muzzarella", " salsa de tomate", " aceitunas"],
         precio: 500,
+        imgSrc: "./img/muzzarella.png",
     },
     {
         id: 2,
         nombre: "calabresa",
-        ingredientes: ["queso", "longaniza", "salsa de tomate"],
+        ingredientes: ["queso", " longaniza", " salsa de tomate"],
         precio: 900,
+        imgSrc: "./img/calabresa.png.png",
     },
     {
         id: 3,
         nombre: "fugazzeta",
-        ingredientes: ["queso", "cebolla", "aceitunas"],
+        ingredientes: ["queso", " cebolla", " aceitunas"],
         precio: 750,
+        imgSrc: "./img/fugazzeta.png",
     },
     {
         id: 4,
         nombre: "napolitana",
-        ingredientes: ["queso", "tomate", "albahaca", "aceite de oliva"],
+        ingredientes: ["queso", " tomate", " albahaca", " aceite de oliva"],
         precio: 1000,
+        imgSrc: "./img/napolitana.png",
     },
     {
         id: 5,
         nombre: "cuatro quesos",
-        ingredientes: ["muzzarella", "parmesano", "roquefort", "robiola"],
+        ingredientes: ["muzzarella", " parmesano", " roquefort", " robiola"],
         precio: 900,
+        imgSrc: "./img/cuatroquesos.png",
     },
     {
         id: 6,
         nombre: "argentina",
-        ingredientes: ["tomate", "cebolla", "queso"],
+        ingredientes: ["tomate", " cebolla", " queso"],
         precio: 600,
+        imgSrc: "./img/argentina.png",
     },
 ]
 
@@ -124,3 +130,5 @@ const init = () => {
 };
 
 init();
+
+
